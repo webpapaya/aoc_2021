@@ -1,0 +1,25 @@
+{
+  "name": "tdd-starter",
+  "version": "1.0.0",
+  "description": "Minimal TDD Starter Package with (mocha and hamjest)",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -r regenerator-runtime/runtime.js -r @swc-node/register -r regenerator-runtime/runtime --exit --extension ts $(find src -name '*.spec.ts')"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/mocha": "^8.2.0",
+    "regenerator-runtime": "^0.13.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/register": "^7.6.2",
+    "@swc-node/register": "^1.0.2",
+    "@types/node": "^16.11.11",
+    "hamjest": "^3.7.1",
+    "mocha": "^8.2.1",
+    "typescript": "^4.1.3"
+  }
+}
