@@ -59,7 +59,7 @@ const filter = (binaryNumbers: string[], position: number, mode: Mode): string[]
 }
 
 
-describe.only('Day 3/1', () => {
+describe('Day 3/1', () => {
   it('part 1', () => {
     const contents = readFileSync('./src/03/input.txt')
     const inputs = contents.toString().split('\n')
