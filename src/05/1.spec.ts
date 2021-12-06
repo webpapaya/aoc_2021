@@ -72,7 +72,7 @@ const part2 = (paths: Path[]) => {
   return determineOverlaps(paths)
 }
 
-describe.only('Day 5/1', () => {
+describe('Day 5/1', () => {
   it('points 1,1 and 1,3 expand to 1,1 1,2 1,3', () => {
     assertThat(expandLines([1,1], [1,3]), containsInAnyOrder([1,1], [1,2], [1,3]))
   })
