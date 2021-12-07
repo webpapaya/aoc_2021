@@ -25,7 +25,7 @@ const part2 = (timesToReproduce: number[]) => {
   return nextDay(timesToReproduce, 256)
 }
 
-describe.only('Day 6', () => {
+describe('Day 6', () => {
   it('part 1', () => {
     const contents = readFileSync('./src/06/input.txt')
     const timesToReproduce = contents.toString().split(',').map((number) => parseInt(number))
